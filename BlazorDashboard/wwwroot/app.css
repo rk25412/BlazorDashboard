@@ -283,6 +283,7 @@ ul {
   margin-top: 60px;
   margin-left: 300px;
   transition: margin-left 0.3s;
+  padding: 20px 30px;
 }
 
 .page-content.hidden-sidebar {
