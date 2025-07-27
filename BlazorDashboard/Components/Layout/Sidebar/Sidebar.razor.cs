@@ -6,9 +6,9 @@ public partial class Sidebar : ComponentBase
 {
     private bool _showSidebar = true;
 
-    public void ToggleSidebar()
+    public void SetToggleSidebar(bool show)
     {
-        _showSidebar = !_showSidebar;
+        _showSidebar = show;
         InvokeAsync(StateHasChanged);
     }
 }

@@ -278,3 +278,13 @@ ul {
   color: #4154f1;
   background: #f6f9ff;
 }
+
+.page-content {
+  margin-top: 60px;
+  margin-left: 300px;
+  transition: margin-left 0.3s;
+}
+
+.page-content.hidden-sidebar {
+  margin-left: 0;
+}

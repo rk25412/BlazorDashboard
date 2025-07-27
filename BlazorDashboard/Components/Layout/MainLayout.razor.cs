@@ -2,10 +2,13 @@ namespace BlazorDashboard.Components.Layout;
 
 public partial class MainLayout
 {
+    private bool _showSidebar = true;
     private Sidebar.Sidebar? _sidebar;
 
-    public void ToggleSidebar()
+    
+    private void ToggleSidebar()
     {
-        _sidebar?.ToggleSidebar();
+        _showSidebar = !_showSidebar;
+        _sidebar?.SetToggleSidebar(_showSidebar);
     }
 }
