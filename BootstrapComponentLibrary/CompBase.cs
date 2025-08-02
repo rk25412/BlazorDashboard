@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorDashboard.Components.Shared;
+namespace BootstrapComponentLibrary;
 
 public class CompBase : ComponentBase
 {

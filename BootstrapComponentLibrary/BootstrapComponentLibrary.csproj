@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
@@ -6,12 +6,17 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+
     <ItemGroup>
-      <Folder Include="Components\Shared\Forms\" />
+        <SupportedPlatform Include="browser"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BootstrapComponentLibrary\BootstrapComponentLibrary.csproj" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.6"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-using BlazorDashboard.Components.Shared;
+using BootstrapComponentLibrary;
 
 namespace BlazorDashboard.Components.Pages;
 
