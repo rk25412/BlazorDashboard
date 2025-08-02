@@ -1,8 +1,19 @@
-<div class="pageTitle">
-    <h1>@Title</h1>
+@inherits CompBase
 
-    @if (Breadcrumbs.Count > 0)
-    {
-        <Breadcrumb BreadcrumbItems="Breadcrumbs"/>
-    }
-</div>
+@if (Visible)
+{
+    <div class="pageTitle @Class"
+         id="@GetId()"
+         @onclick="OnClick"
+         @attributes="@Attributes"
+         @ref="@ElementReference">
+        <h1>@Title</h1>
+
+        @if (Breadcrumbs.Count > 0)
+        {
+            <Breadcrumb BreadcrumbItems="Breadcrumbs"
+                        Divider="@BreadcrumbDivider"
+                        Position="@BreadcrumbPosition"/>
+        }
+    </div>
+}

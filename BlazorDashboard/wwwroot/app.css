@@ -231,12 +231,6 @@ ul {
   background-color: #fff;
 }
 
-@media (min-width: 1200px) {
-  .sidebar.hidden-sidebar {
-    left: -300px;
-  }
-}
-
 .sidebar-nav {
   list-style: none;
   padding: 0;
@@ -288,4 +282,24 @@ ul {
 
 .page-content.hidden-sidebar {
   margin-left: 0;
+}
+
+@media (min-width: 1200px) {
+  .sidebar.hidden-sidebar {
+    left: -300px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sidebar {
+    left: -300px;
+  }
+
+  .sidebar.hidden-sidebar {
+    left: 0;
+  }
+
+  .page-content, .page-content.hidden-sidebar {
+    margin-left: 0;
+  }
 }

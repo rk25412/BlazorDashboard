@@ -1,0 +1,50 @@
+@inherits CompBase
+
+@if (Items != null)
+{
+     <CascadingValue Value=this>
+          @Items
+     </CascadingValue>
+}
+
+@if (Visible)
+{
+     <div class="accordion @(Flush ? "accordion-flush" : "") @Class"
+          id="@GetId()"
+          @ref="@ElementReference"
+          @attributes="@Attributes">
+          @for (var index = 0; index < _items.Count; index++)
+          {
+               var item = _items[index];
+               if (!item.Visible)
+               {
+                    continue;
+               }
+
+               <div class="accordion-item @Class"
+                    id="@item.GetId()"
+                    @ref="@item.ElementReference"
+                    @attributes="Attributes"
+                    aria-expanded="@(item.Expanded ? "true" : "false")">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button @(item.Expanded ? "" : "collapsed")"
+                                 type="button"
+                                 data-bs-toggle="collapse"
+                                 data-bs-target="#@item.ContentId"
+                                 aria-expanded="true"
+                                 aria-controls="@item.ContentId"
+                                 @onclick="@(() => OnHeaderClick(item))">
+                              @item.Title
+                         </button>
+                    </h2>
+                    <div id="@item.ContentId"
+                         class="accordion-collapse collapse @(item.Expanded ? "show" : "")"
+                         @attributes="@item.ContentAttributes">
+                         <div class="accordion-body">
+                              @item.ChildContent
+                         </div>
+                    </div>
+               </div>
+          }
+     </div>
+}

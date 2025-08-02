@@ -1,17 +1,40 @@
-<nav>
-    <ol class="breadcrumb">
-        @foreach (var item in BreadcrumbItems)
-        {
-            <li class="breadcrumb-item">
-                @if (string.IsNullOrEmpty(item.Url))
-                {
-                    <a href="@item.Url">@item.Title</a>
-                }
-                else
-                {
-                    @item.Title
-                }
-            </li>
-        }
-    </ol>
-</nav>
+@inherits CompBase
+
+@if (Visible)
+{
+    <nav style="--bs-breadcrumb-divider: '@Divider'"
+         class="@_positionCssClass @Class"
+         id="@GetId()"
+         @onclick="OnClick"
+         @attributes="@Attributes"
+         @ref="@ElementReference">
+        <ol class="breadcrumb">
+            @foreach (var item in BreadcrumbItems)
+            {
+                <li class="breadcrumb-item @(BreadcrumbItems[^1] == item ? "active" : "")">
+                    @if (!string.IsNullOrEmpty(item.Url))
+                    {
+                        <a href="@item.Url">
+                            @if (!string.IsNullOrEmpty(item.Icon))
+                            {
+                                <i class="bi @item.Icon"></i>
+                                @((MarkupString)"&nbsp;")
+                            }
+                            @item.Title
+                        </a>
+                    }
+                    else
+                    {
+                        @if (!string.IsNullOrEmpty(item.Icon))
+                        {
+                            <i class="bi @item.Icon"></i>
+                            @((MarkupString)"&nbsp;")
+                        }
+
+                        @item.Title
+                    }
+                </li>
+            }
+        </ol>
+    </nav>
+}
