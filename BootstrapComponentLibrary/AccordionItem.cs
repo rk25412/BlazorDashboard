@@ -16,7 +16,14 @@ public class AccordionItem : CompBase
         }
     }
 
+    /// <summary>
+    /// Title to show in the Accordion Item
+    /// </summary>
     [Parameter] public string Title { get; set; } = string.Empty;
+    
+    /// <summary>
+    /// The content for the accordion item
+    /// </summary>
     [Parameter] public RenderFragment? ChildContent { get; set; }
     private Accordion _accordion = null!;
     public bool Expanded { get; set; } = false;

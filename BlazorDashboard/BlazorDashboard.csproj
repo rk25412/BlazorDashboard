@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Components\Shared\Forms\" />
+      <Folder Include="Components\Shared\" />
     </ItemGroup>
 
     <ItemGroup>
