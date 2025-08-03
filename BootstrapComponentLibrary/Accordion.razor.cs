@@ -25,7 +25,7 @@ public partial class Accordion
     [Parameter] public EventCallback<int> OnExpand { get; set; }
     
     /// <summary>
-    /// Event callback when an item is collapsed
+    /// Event callback for when an item is collapsed
     /// </summary>
     [Parameter] public EventCallback<int> OnCollapse { get; set; }
     

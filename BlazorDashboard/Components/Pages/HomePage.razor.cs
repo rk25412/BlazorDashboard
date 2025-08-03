@@ -2,7 +2,7 @@ using BootstrapComponentLibrary;
 
 namespace BlazorDashboard.Components.Pages;
 
-public partial class Home
+public partial class HomePage
 {
     private readonly List<BreadcrumbItem> _breadcrumb =
     [

@@ -1,0 +1,21 @@
+@inherits CompBase
+
+@if (Visible)
+{
+    <button class="btn @GetButtonCssClasses() @Class"
+            id="@GetId()"
+            @attributes="@Attributes"
+            disabled="@Disabled"
+            @onclick="@OnClick">
+        @if (ChildContent is not null)
+        {
+            @ChildContent
+        }
+        else
+        {
+            <span class="@GetTextCssClasses()">
+                @Text
+            </span>
+        }
+    </button>
+}

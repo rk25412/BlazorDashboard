@@ -1,5 +1,4 @@
 ﻿@page "/"
-@using BootstrapComponentLibrary
 
 <PageTitle>Dashboard</PageTitle>
 
@@ -38,3 +37,28 @@
         </AccordionItem>
     </Items>
 </Accordion>
+
+<hr/>
+
+<Badge Text="Test"
+       TextColor="TextColor.Light"
+       Pill="true">
+</Badge>
+
+<hr/>
+
+<Button Text="Test Button"
+        ButtonVariant="@ButtonVariant.Outlined"
+        OnClick="@(() => Console.WriteLine("Button Clicked"))"
+        ButtonSize="ButtonSize.Small">
+</Button>
+<Button Text="Test Button"
+        ButtonVariant="@ButtonVariant.Outlined"
+        OnClick="@(() => Console.WriteLine("Button Clicked"))"
+        ButtonSize="ButtonSize.Large"
+        Disabled="@true">
+</Button>
+<Button Text="Test Button"
+        ButtonVariant="@ButtonVariant.Outlined"
+        OnClick="@(() => Console.WriteLine("Button Clicked"))">
+</Button>
