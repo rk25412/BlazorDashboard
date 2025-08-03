@@ -5,60 +5,78 @@
 <PageHeader Title="Dashboard"
             Breadcrumbs="@_breadcrumb"/>
 
-<Alert Message="Test Message"
-       AlertColor="@AlertColor.Primary"
-       AlertStyle="AlertStyle.Solid">
-    <Template>
-        <h4 class="alert-heading">Primary Heading</h4>
-        <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum perferendis laborum.
-            Occaecati illo at laboriosam rem molestiae sint.</p>
-        <hr/>
-        <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
-    </Template>
-</Alert>
+<div class="row">
+    <div class="col-md-6 col-12">
+        <Card Title="Default Card">
+            <CardBody>
+                Ut in ea error laudantium quas omnis officia. Sit sed praesentium voluptas. Corrupti inventore
+                consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus assumenda. Non
+                sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas. Quidem sit est nulla ullam.
+                Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim fuga ipsum dolor nulla quia ut. Rerum
+                dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut. Consequatur rerum in.
+            </CardBody>
+        </Card>
 
-<Accordion OnExpand="@(i => Console.WriteLine("Expanded - " + i))"
-           OnCollapse="@(i => Console.WriteLine("Collapsed - " + i))"
-           Multiple="true">
-    <Items>
-        <AccordionItem Title="Accordion Item #1">
-            <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
-        </AccordionItem>
-        <AccordionItem Title="Accordion Item #2">
-            <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
-        </AccordionItem>
-    </Items>
-</Accordion>
+        <Card Class="mt-2">
+            <CardHeader>
+                Header
+            </CardHeader>
+            <CardBody>
+                Ut in ea error laudantium quas omnis officia. Sit sed praesentium voluptas. Corrupti inventore
+                consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus assumenda. Non
+                sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas. Quidem sit est nulla ullam.
+                Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim fuga ipsum dolor nulla quia ut. Rerum
+                dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut. Consequatur rerum in.
+            </CardBody>
+            <CardFooter>
+                Footer
+            </CardFooter>
+        </Card>
+    </div>
+    <div class="col-md-3 col-12">
+        <Card Title="Card with an image on top"
+              ImgTop="https://bootstrapmade.com/content/demo/NiceAdmin/assets/img/card.jpg">
+            <CardBody>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+            </CardBody>
+        </Card>
 
-<hr/>
+        <Card Class="mt-2"
+              Title="Card with an image on bottom"
+              ImgBottom="https://bootstrapmade.com/content/demo/NiceAdmin/assets/img/card.jpg">
+            <CardBody>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+            </CardBody>
+        </Card>
+    </div>
 
-<Badge Text="Test"
-       TextColor="TextColor.Light"
-       Pill="true">
-</Badge>
-
-<hr/>
-
-<Button Text="Test Button"
-        ButtonVariant="@ButtonVariant.Outlined"
-        OnClick="@(() => Console.WriteLine("Button Clicked"))"
-        ButtonSize="ButtonSize.Small">
-</Button>
-<Button Text="Test Button"
-        ButtonVariant="@ButtonVariant.Outlined"
-        OnClick="@(() => Console.WriteLine("Button Clicked"))"
-        ButtonSize="ButtonSize.Large"
-        Disabled="@true">
-</Button>
-<Button Text="Test Button"
-        ButtonVariant="@ButtonVariant.Outlined"
-        OnClick="@(() => Console.WriteLine("Button Clicked"))">
-</Button>
+    <div class="col-md-3 col-12">
+        <Card Title="Card with an image overlay"
+              ImgTop="https://bootstrapmade.com/content/demo/NiceAdmin/assets/img/card.jpg"
+              ImageOverlay="true">
+            <CardBody>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+            </CardBody>
+        </Card>
+        
+        <Card Class="mt-2"
+              Title="Card with titles, buttons, and links"
+              Subtitle="Card subtitle">
+            <CardBody>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+            </CardBody>
+        </Card>
+        
+        <Card Class="mt-2 text-center"
+              Title="Special title treatment">
+            <CardBody>
+                <p class="text-center">
+                    With supporting text below as a natural lead-in to additional content.
+                </p>
+                <p class="text-center">
+                    <Button>Go Somewhere</Button>
+                </p>
+            </CardBody>
+        </Card>
+    </div>
+</div>

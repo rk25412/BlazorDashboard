@@ -1,0 +1,55 @@
+@inherits CompBase
+
+
+<div class="card @Class"
+     id="@GetId()"
+     @ref="@ElementReference"
+     @attributes="@Attributes">
+
+     @if (!string.IsNullOrEmpty(ImgTop))
+     {
+          <img src="@ImgTop"
+               alt="card-img-top"
+               class="card-img-top"/>
+     }
+
+     @if (CardHeader is not null)
+     {
+          <div class="card-header">
+               @CardHeader
+          </div>
+     }
+
+     <div class="@(ImageOverlay ? "card-img-overlay" : "card-body")">
+          @if (!string.IsNullOrEmpty(Title))
+          {
+               <h5 class="card-title">
+                    @Title
+               </h5>
+          }
+          
+          @if (!string.IsNullOrEmpty(Subtitle))
+          {
+               <h6 class="card-subtitle mb-2 text-muted">
+                    @Subtitle
+               </h6>
+          }
+          
+          @CardBody
+     </div>
+
+
+     @if (CardFooter is not null)
+     {
+          <div class="card-footer">
+               @CardFooter
+          </div>
+     }
+
+     @if (!string.IsNullOrEmpty(ImgBottom))
+     {
+          <img src="@ImgBottom"
+               alt="card-img-bottom"
+               class="card-img-bottom"/>
+     }
+</div>
