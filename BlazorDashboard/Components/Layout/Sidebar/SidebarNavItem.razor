@@ -1,0 +1,39 @@
+<li class="nav-item">
+    @if (NavItem is not null)
+    {
+        @if (NavItem.SubItems.Count > 0)
+        {
+            <a class="nav-link collapsed"
+               data-bs-target="#@Id"
+               data-bs-toggle="collapse"
+               href="#">
+                <i class="@NavItem.Icon"></i>
+                <span>@NavItem.Title</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+
+            <ul id="@Id"
+                class="nav-content collapse"
+                data-bs-parent="#sidebar-nav">
+                @foreach (var item in NavItem.SubItems)
+                {
+                    <li>
+                        <NavLink href="@item.Href">
+                            <i class="bi bi-circle"></i>
+                            @item.Title
+                        </NavLink> 
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <NavLink class="nav-link"
+                     href="@NavItem.Href"
+                     Match="NavLinkMatch.All">
+                <i class="@NavItem.Icon"></i>
+                <span>@NavItem.Title</span>
+            </NavLink>
+        }
+    }
+</li>

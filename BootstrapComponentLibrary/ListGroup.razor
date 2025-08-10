@@ -1,0 +1,32 @@
+@inherits CompBase
+
+@if (Items != null)
+{
+    <CascadingValue Value=this>
+        @Items
+    </CascadingValue>
+}
+
+@if (Visible)
+{
+    <div class="list-group @Class"
+         id="@GetId()"
+         @ref="ElementReference"
+         @attributes="@Attributes">
+        @for (var i = 0; i < _items.Count; i++)
+        {
+            var item = _items[i];
+            if (!item.Visible)
+            {
+                continue;
+            }
+            
+            <div class="list-group-item @item.Class"
+                 id="@item.GetId()"
+                 @ref="@item.ElementReference"
+                 @attributes="@Attributes">
+                @item.ChildContent
+            </div>
+        }
+    </div>
+}
