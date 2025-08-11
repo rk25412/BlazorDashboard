@@ -43,7 +43,7 @@ public partial class Badge
         {
             BadgeColor.Primary => "primary",
             BadgeColor.Secondary => "secondary",
-            BadgeColor.Success => "Success",
+            BadgeColor.Success => "success",
             BadgeColor.Danger => "danger",
             BadgeColor.Warning => "warning",
             BadgeColor.Info => "info",

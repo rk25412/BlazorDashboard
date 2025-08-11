@@ -21,7 +21,9 @@ public partial class Sidebar : ComponentBase
                 Title="Components", Icon = "bi bi-menu-button-wide",
                 SubItems = 
                 [
-                    new SidebarNavModel { Title = "Alerts", Href = "/alerts" }
+                    new SidebarNavModel { Title = "Alerts", Href = "/alerts" },
+                    new SidebarNavModel { Title = "Accordion", Href = "/accordions" },
+                    new SidebarNavModel { Title = "Badges", Href = "/badges" },
                 ]
             },
             new SidebarNavModel

@@ -4,3 +4,194 @@
 
 <PageHeader Title="Alerts"
             Breadcrumbs="@_breadcrumb"/>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div>
+            <Card Title="Default">
+                <CardBody>
+                    <Alert Message="A simple primary alert—check it out!"
+                           AlertColor="@AlertColor.Primary"/>
+                    <Alert Message="A simple secondary alert—check it out!"
+                           AlertColor="@AlertColor.Secondary"/>
+                    <Alert Message="A simple success alert—check it out!"
+                           AlertColor="@AlertColor.Success"/>
+                    <Alert Message="A simple danger alert—check it out!"
+                           AlertColor="@AlertColor.Danger"/>
+                    <Alert Message="A simple warning alert—check it out!"
+                           AlertColor="@AlertColor.Warning"/>
+                    <Alert Message="A simple info alert—check it out!"
+                           AlertColor="@AlertColor.Info"/>
+                    <Alert Message="A simple light alert—check it out!"
+                           AlertColor="@AlertColor.Light"/>
+                    <Alert Message="A simple dark alert—check it out!"
+                           AlertColor="@AlertColor.Dark"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mt-4">
+            <Card Title="With Icon">
+                <CardBody>
+                    <Alert Message="A simple primary alert with icon—check it out!"
+                           AlertColor="@AlertColor.Primary"
+                           Icon="bi bi-star"/>
+                    <Alert Message="A simple secondary alert with icon—check it out!"
+                           AlertColor="@AlertColor.Secondary"
+                           Icon="bi bi-collection"/>
+                    <Alert Message="A simple success alert with icon—check it out!"
+                           AlertColor="@AlertColor.Success"
+                           Icon="bi bi-check-circle"/>
+                    <Alert Message="A simple danger alert with icon—check it out!"
+                           AlertColor="@AlertColor.Danger"
+                           Icon="bi bi-exclamation-octagon"/>
+                    <Alert Message="A simple warning alert with icon—check it out!"
+                           AlertColor="@AlertColor.Warning"
+                           Icon="bi bi-exclamation-triangle"/>
+                    <Alert Message="A simple info alert with icon—check it out!"
+                           AlertColor="@AlertColor.Info"
+                           Icon="bi bi-info-circle"/>
+                    <Alert Message="A simple dark alert with icon—check it out!"
+                           AlertColor="@AlertColor.Dark"
+                           Icon="bi bi-folder"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mt-4">
+            <Card Title="Outlined">
+                <CardBody>
+                    <Alert Message="A simple primary outlined alert—check it out!"
+                           AlertColor="@AlertColor.Primary"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple secondary outlined alert—check it out!"
+                           AlertColor="@AlertColor.Secondary"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple success outlined alert—check it out!"
+                           AlertColor="@AlertColor.Success"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple danger outlined alert—check it out!"
+                           AlertColor="@AlertColor.Danger"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple warning outlined alert—check it out!"
+                           AlertColor="@AlertColor.Warning"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple info outlined alert—check it out!"
+                           AlertColor="@AlertColor.Info"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple light outlined alert—check it out!"
+                           AlertColor="@AlertColor.Light"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                    <Alert Message="A simple dark outlined alert—check it out!"
+                           AlertColor="@AlertColor.Dark"
+                           AlertStyle="@AlertStyle.Outlined"/>
+                </CardBody>
+            </Card>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div>
+            <Card Title="Default Solid Color">
+                <CardBody>
+                    <Alert Message="A simple primary alert with solid color—check it out!"
+                           AlertColor="@AlertColor.Primary" 
+                           AlertStyle="@AlertStyle.Solid"/>
+                    <Alert Message="A simple secondary alert with solid color—check it out!"
+                           AlertColor="@AlertColor.Secondary" 
+                           AlertStyle="@AlertStyle.Solid"/>
+                    <Alert Message="A simple success alert with solid color—check it out!"
+                           AlertColor="@AlertColor.Success"
+                           AlertStyle="@AlertStyle.Solid"/>
+                    <Alert Message="A simple danger alert with solid color—check it out!"
+                           AlertColor="@AlertColor.Danger" 
+                           AlertStyle="@AlertStyle.Solid"/>
+                    <Alert Message="A simple warning alert with solid color—check it out!"
+                           AlertColor="@AlertColor.Warning"
+                           AlertStyle="@AlertStyle.Solid"/>
+                    <Alert Message="A simple info alert with solid color—check it out!" 
+                           AlertColor="@AlertColor.Info"
+                           AlertStyle="@AlertStyle.Solid"/>
+                    <Alert Message="A simple dark alert with solid color—check it out!" 
+                           AlertColor="@AlertColor.Dark"
+                           AlertStyle="@AlertStyle.Solid"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mt-4">
+            <Card Title="With Heading & Separator">
+                <CardBody>
+                    <Alert AlertColor="@AlertColor.Primary">
+                        <Template>
+                            <h5 class="alert-heading">Primary Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Secondary">
+                        <Template>
+                            <h5 class="alert-heading">Secondary Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Success">
+                        <Template>
+                            <h5 class="alert-heading">Success Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Danger">
+                        <Template>
+                            <h5 class="alert-heading">Danger Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Warning">
+                        <Template>
+                            <h5 class="alert-heading">Warning Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Info">
+                        <Template>
+                            <h5 class="alert-heading">Info Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Light">
+                        <Template>
+                            <h5 class="alert-heading">Light Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                    <Alert AlertColor="@AlertColor.Dark">
+                        <Template>
+                            <h5 class="alert-heading">Dark Heading</h5>
+                            <p>Et suscipit deserunt earum itaque dignissimos recusandae dolorem qui. Molestiae rerum
+                                perferendis laborum. Occaecati illo at laboriosam rem molestiae sint.</p>
+                            <hr/>
+                            <p class="mb-0">Temporibus quis et qui aspernatur laboriosam sit eveniet qui sunt.</p>
+                        </Template>
+                    </Alert>
+                </CardBody>
+            </Card>
+        </div>
+    </div>
+</div>

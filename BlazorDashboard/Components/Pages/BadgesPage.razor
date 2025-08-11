@@ -1,0 +1,41 @@
+@page "/badges"
+
+<PageTitle>Badges</PageTitle>
+
+<PageHeader Title="Badges"
+            Breadcrumbs="@_breadcrumb"/>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div>
+            <Card Title="Default Badges">
+                <CardBody>
+                    <Badge BadgeColor="@BadgeColor.Primary" 
+                           Text="Primary" TextColor="@TextColor.White"/>
+                    <Badge BadgeColor="@BadgeColor.Secondary" 
+                           Text="Secondary" TextColor="@TextColor.White"/>
+                    <Badge BadgeColor="@BadgeColor.Success" 
+                           Text="Success" TextColor="@TextColor.White"/>
+                    <Badge BadgeColor="@BadgeColor.Danger" 
+                           Text="Danger" TextColor="@TextColor.White"/>
+                    <Badge BadgeColor="@BadgeColor.Warning" 
+                           Text="Warning" TextColor="@TextColor.Black"/>
+                    <Badge BadgeColor="@BadgeColor.Info" 
+                           Text="Info" TextColor="@TextColor.Black"/>
+                    <Badge BadgeColor="@BadgeColor.Light" 
+                           Text="Light" TextColor="@TextColor.Black"/>
+                    <Badge BadgeColor="@BadgeColor.Dark" 
+                           Text="Dark" TextColor="@TextColor.White"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mt-4">
+               <Card Title="Pill Badges">
+               <CardBody>
+                      
+               </CardBody>
+               </Card>
+        </div>
+    </div>
+    <div class="col-lg-6"></div>
+</div>
