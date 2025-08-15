@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.JSInterop;
-
 namespace BlazorDashboard.Components.Layout.Sidebar;
 
 public partial class Sidebar : ComponentBase
@@ -25,6 +22,7 @@ public partial class Sidebar : ComponentBase
                     new SidebarNavModel { Title = "Accordion", Href = "/components/accordions" },
                     new SidebarNavModel { Title = "Badges", Href = "/components/badges" },
                     new SidebarNavModel { Title = "Breadcrumbs", Href = "/components/breadcrumbs" },
+                    new SidebarNavModel { Title = "Buttons", Href = "/components/buttons" },
                 ]
             },
             new SidebarNavModel

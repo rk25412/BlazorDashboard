@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Components;
-
 namespace BlazorDashboard.Components.Layout.Sidebar;
 
 public partial class SidebarNavItem : ComponentBase

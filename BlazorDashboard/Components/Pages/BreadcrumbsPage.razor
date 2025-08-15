@@ -1,8 +1,66 @@
 @page "/components/breadcrumbs"
 
+<PageTitle>Components / Breadcrumbs</PageTitle>
 
-<PageTitle>Components / Badges</PageTitle>
-
-<PageHeader Title="Badges"
+<PageHeader Title="Breadcrumbs"
             Breadcrumbs="@_breadcrumb"/>
 
+<div class="row">
+    <div class="col-lg-6">
+        <div class="mb-4">
+            <Card Title="Default Breadcrumbs">
+                <CardBody>
+                    <Breadcrumb BreadcrumbItems="@_breadcrumb"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mb-4">
+            <Card Title="Centered">
+                <CardBody>
+                    <Breadcrumb BreadcrumbItems="@_breadcrumb"
+                                Position="@BreadcrumbPosition.Center"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mb-4">
+            <Card Title="Right Positioned">
+                <CardBody>
+                    <Breadcrumb BreadcrumbItems="@_breadcrumb"
+                                Position="@BreadcrumbPosition.Right"/>
+                </CardBody>
+            </Card>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="mb-4">
+            <Card Title="Breadcrumbs with a page title">
+                <CardBody>
+                    <PageHeader Title="Breadcrumbs"
+                                Breadcrumbs="@_breadcrumb"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mb-4">
+            <Card Title="Breadcrumbs with a page title">
+                <CardBody>
+                    <div>
+                        <Breadcrumb BreadcrumbItems="@_breadcrumb"
+                                    Divider=">"/>
+                    </div>
+                    <div>
+                        <Breadcrumb BreadcrumbItems="@_breadcrumb"
+                                    Divider="|"/>
+                    </div>
+                    <div>
+                        <Breadcrumb BreadcrumbItems="@_breadcrumb"
+                                    Divider="-"/>
+                    </div>
+                    <div>
+                        <Breadcrumb BreadcrumbItems="@_breadcrumb"
+                                    Divider=" "/>
+                    </div>
+                </CardBody>
+            </Card>
+        </div>
+    </div>
+</div>

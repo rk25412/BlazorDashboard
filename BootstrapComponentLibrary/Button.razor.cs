@@ -5,7 +5,7 @@ namespace BootstrapComponentLibrary;
 public partial class Button
 {
     [Parameter] public string? Text { get; set; }
-    [Parameter] public ButtonType? ButtonType { get; set; }
+    [Parameter] public ButtonType ButtonType { get; set; } = ButtonType.Default;
     [Parameter] public ButtonVariant ButtonVariant { get; set; } = ButtonVariant.Flat;
     [Parameter] public ButtonColor ButtonColor { get; set; } = ButtonColor.Primary;
     [Parameter] public ButtonSize ButtonSize { get; set; } = ButtonSize.Default;
@@ -17,9 +17,9 @@ public partial class Button
     {
         base.OnParametersSet();
 
-        if (ButtonType is not null)
+        if (ButtonType is not ButtonType.Default)
         {
-            Attributes.Add("type", ButtonType is BootstrapComponentLibrary.ButtonType.Button ? "button" : "submit");
+            Attributes.Add("type", ButtonType is ButtonType.Button ? "button" : "submit");
         }
     }
 

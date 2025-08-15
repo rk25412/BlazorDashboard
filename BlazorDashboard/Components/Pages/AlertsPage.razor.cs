@@ -1,6 +1,3 @@
-using BootstrapComponentLibrary;
-using Microsoft.AspNetCore.Components;
-
 namespace BlazorDashboard.Components.Pages;
 
 public partial class AlertsPage : ComponentBase
