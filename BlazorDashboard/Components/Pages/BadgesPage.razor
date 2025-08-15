@@ -1,41 +1,236 @@
-@page "/badges"
+@page "/components/badges"
 
-<PageTitle>Badges</PageTitle>
+<PageTitle>Components / Badges</PageTitle>
 
 <PageHeader Title="Badges"
             Breadcrumbs="@_breadcrumb"/>
 
 <div class="row">
     <div class="col-lg-6">
-        <div>
+        <div class="mb-4">
             <Card Title="Default Badges">
                 <CardBody>
-                    <Badge BadgeColor="@BadgeColor.Primary" 
+                    <Badge BadgeColor="@BadgeColor.Primary"
                            Text="Primary" TextColor="@TextColor.White"/>
-                    <Badge BadgeColor="@BadgeColor.Secondary" 
+                    <Badge BadgeColor="@BadgeColor.Secondary"
                            Text="Secondary" TextColor="@TextColor.White"/>
-                    <Badge BadgeColor="@BadgeColor.Success" 
+                    <Badge BadgeColor="@BadgeColor.Success"
                            Text="Success" TextColor="@TextColor.White"/>
-                    <Badge BadgeColor="@BadgeColor.Danger" 
+                    <Badge BadgeColor="@BadgeColor.Danger"
                            Text="Danger" TextColor="@TextColor.White"/>
-                    <Badge BadgeColor="@BadgeColor.Warning" 
+                    <Badge BadgeColor="@BadgeColor.Warning"
                            Text="Warning" TextColor="@TextColor.Black"/>
-                    <Badge BadgeColor="@BadgeColor.Info" 
+                    <Badge BadgeColor="@BadgeColor.Info"
                            Text="Info" TextColor="@TextColor.Black"/>
-                    <Badge BadgeColor="@BadgeColor.Light" 
+                    <Badge BadgeColor="@BadgeColor.Light"
                            Text="Light" TextColor="@TextColor.Black"/>
-                    <Badge BadgeColor="@BadgeColor.Dark" 
+                    <Badge BadgeColor="@BadgeColor.Dark"
                            Text="Dark" TextColor="@TextColor.White"/>
                 </CardBody>
             </Card>
         </div>
-        <div class="mt-4">
-               <Card Title="Pill Badges">
-               <CardBody>
-                      
-               </CardBody>
-               </Card>
+        <div class="mb-4">
+            <Card Title="Pill Badges">
+                <CardBody>
+                    <Badge BadgeColor="@BadgeColor.Primary"
+                           Text="Primary" TextColor="@TextColor.White"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Secondary"
+                           Text="Secondary" TextColor="@TextColor.White"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Success"
+                           Text="Success" TextColor="@TextColor.White"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Danger"
+                           Text="Danger" TextColor="@TextColor.White"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Warning"
+                           Text="Warning" TextColor="@TextColor.Black"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Info"
+                           Text="Info" TextColor="@TextColor.Black"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Light"
+                           Text="Light" TextColor="@TextColor.Black"
+                           Pill="@true"/>
+                    <Badge BadgeColor="@BadgeColor.Dark"
+                           Text="Dark" TextColor="@TextColor.White"
+                           Pill="@true"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mb-4">
+            <Card Title="Icon Badges">
+                <CardBody>
+                    <Badge BadgeColor="@BadgeColor.Primary"
+                           Text="Primary" TextColor="@TextColor.White">
+                        <span>
+                            <i class="bi bi-star me-1"></i>
+                            Primary
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Secondary"
+                           Text="Secondary" TextColor="@TextColor.White">
+                        <span>
+                            <i class="bi bi-collection me-1"></i>
+                            Secondary
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Success"
+                           Text="Success" TextColor="@TextColor.White">
+                        <span>
+                            <i class="bi bi-check-circle me-1"></i>
+                            Success
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Danger"
+                           Text="Danger" TextColor="@TextColor.White">
+                        <span>
+                            <i class="bi bi-exclamation-octagon me-1"></i>
+                            Danger
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Warning"
+                           Text="Warning" TextColor="@TextColor.Black">
+                        <span>
+                            <i class="bi bi-exclamation-triangle me-1"></i>
+                            Warning
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Info"
+                           Text="Info" TextColor="@TextColor.Black">
+                        <span>
+                            <i class="bi bi-info-circle me-1"></i>
+                            Info
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Light"
+                           Text="Light" TextColor="@TextColor.Black">
+                        <span>
+                            <i class="bi bi-star me-1"></i>
+                            Light
+                        </span>
+                    </Badge>
+                    <Badge BadgeColor="@BadgeColor.Dark"
+                           Text="Dark" TextColor="@TextColor.White">
+                        <span>
+                            <i class="bi bi-folder me-1"></i>
+                            Dark
+                        </span>
+                    </Badge>
+                </CardBody>
+            </Card>
         </div>
     </div>
-    <div class="col-lg-6"></div>
+    <div class="col-lg-6">
+        <div class="mb-4">
+            <Card Title="Border Badges">
+                <CardBody>
+                    <Badge BadgeColor="@BadgeColor.Primary"
+                           Text="Primary" TextColor="@TextColor.Primary"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Secondary"
+                           Text="Secondary" TextColor="@TextColor.Secondary"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Success"
+                           Text="Success" TextColor="@TextColor.Success"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Danger"
+                           Text="Danger" TextColor="@TextColor.Danger"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Warning"
+                           Text="Warning" TextColor="@TextColor.Warning"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Info"
+                           Text="Info" TextColor="@TextColor.Info"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Light"
+                           Text="Light" TextColor="@TextColor.Secondary"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                    <Badge BadgeColor="@BadgeColor.Dark"
+                           Text="Dark" TextColor="@TextColor.Dark"
+                           BadgeStyle="@BadgeVariant.Outlined"/>
+                </CardBody>
+            </Card>
+        </div>
+        <div class="mb-4">
+            <Card Title="Button Badges">
+                <CardBody>
+                    <Button ButtonColor="ButtonColor.Primary"
+                            Class="mb-2">
+                        <span>
+                            Primary
+                            <Badge BadgeColor="BadgeColor.Light"
+                                   TextColor="TextColor.Primary"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Secondary"
+                            Class="mb-2">
+                        <span>
+                            Secondary
+                            <Badge BadgeColor="BadgeColor.Light"
+                                   TextColor="TextColor.Secondary"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Success"
+                            Class="mb-2">
+                        <span>
+                            Success
+                            <Badge BadgeColor="BadgeColor.Light"
+                                   TextColor="TextColor.Success"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Danger"
+                            Class="mb-2">
+                        <span>
+                            Danger
+                            <Badge BadgeColor="BadgeColor.White"
+                                   TextColor="TextColor.Danger"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Warning"
+                            Class="mb-2">
+                        <span>
+                            Warning
+                            <Badge BadgeColor="BadgeColor.White"
+                                   TextColor="TextColor.Warning"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Info"
+                            Class="mb-2">
+                        <span>
+                            Info
+                            <Badge BadgeColor="BadgeColor.White"
+                                   TextColor="TextColor.Info"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Light"
+                            TextColor="TextColor.Dark"
+                            Class="mb-2">
+                        <span>
+                            Light
+                            <Badge BadgeColor="BadgeColor.Secondary"
+                                   TextColor="TextColor.White"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                    <Button ButtonColor="ButtonColor.Dark"
+                            Class="mb-2">
+                        <span>
+                            Dark
+                            <Badge BadgeColor="BadgeColor.White"
+                                   TextColor="TextColor.Dark"
+                                   Text="4"/>
+                        </span>
+                    </Button>
+                </CardBody>
+            </Card>
+        </div>
+    </div>
 </div>
